@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		94F16AE623364CE20065F4A5 /* KeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F16AE423364CE20065F4A5 /* KeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94F16AF123364D000065F4A5 /* KeychainWrapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16AEC23364CFF0065F4A5 /* KeychainWrapperError.swift */; };
+		94F16AF223364D000065F4A5 /* InternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16AED23364CFF0065F4A5 /* InternetAuthenticationType.swift */; };
+		94F16AF323364D000065F4A5 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16AEE23364CFF0065F4A5 /* KeychainWrapper.swift */; };
+		94F16AF423364D000065F4A5 /* InternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16AEF23364D000065F4A5 /* InternetProtocol.swift */; };
+		94F16AF523364D000065F4A5 /* KeychainQueryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16AF023364D000065F4A5 /* KeychainQueryProvider.swift */; };
+		94F16B04233674D90065F4A5 /* BiometryPasswordQueryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16B03233674D90065F4A5 /* BiometryPasswordQueryProvider.swift */; };
+		94F16B062336783E0065F4A5 /* KeychainOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16B052336783E0065F4A5 /* KeychainOperation.swift */; };
+		94F16B082336788F0065F4A5 /* GenericPasswordQueryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16B072336788F0065F4A5 /* GenericPasswordQueryProvider.swift */; };
+		94F16B0A233678EB0065F4A5 /* InternetPasswordQueryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F16B09233678EB0065F4A5 /* InternetPasswordQueryProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94F16AE123364CE20065F4A5 /* KeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F16AE423364CE20065F4A5 /* KeychainWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		94F16AE523364CE20065F4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F16AEC23364CFF0065F4A5 /* KeychainWrapperError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapperError.swift; sourceTree = "<group>"; };
+		94F16AED23364CFF0065F4A5 /* InternetAuthenticationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetAuthenticationType.swift; sourceTree = "<group>"; };
+		94F16AEE23364CFF0065F4A5 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		94F16AEF23364D000065F4A5 /* InternetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetProtocol.swift; sourceTree = "<group>"; };
+		94F16AF023364D000065F4A5 /* KeychainQueryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainQueryProvider.swift; sourceTree = "<group>"; };
+		94F16B03233674D90065F4A5 /* BiometryPasswordQueryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometryPasswordQueryProvider.swift; sourceTree = "<group>"; };
+		94F16B052336783E0065F4A5 /* KeychainOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainOperation.swift; sourceTree = "<group>"; };
+		94F16B072336788F0065F4A5 /* GenericPasswordQueryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswordQueryProvider.swift; sourceTree = "<group>"; };
+		94F16B09233678EB0065F4A5 /* InternetPasswordQueryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetPasswordQueryProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +65,26 @@
 			isa = PBXGroup;
 			children = (
 				94F16AE423364CE20065F4A5 /* KeychainWrapper.h */,
+				94F16AED23364CFF0065F4A5 /* InternetAuthenticationType.swift */,
+				94F16AEF23364D000065F4A5 /* InternetProtocol.swift */,
+				94F16AEE23364CFF0065F4A5 /* KeychainWrapper.swift */,
+				94F16AEC23364CFF0065F4A5 /* KeychainWrapperError.swift */,
+				94F16B052336783E0065F4A5 /* KeychainOperation.swift */,
+				94F16B02233674C10065F4A5 /* QueryProvider */,
 				94F16AE523364CE20065F4A5 /* Info.plist */,
 			);
 			path = KeychainWrapper;
+			sourceTree = "<group>";
+		};
+		94F16B02233674C10065F4A5 /* QueryProvider */ = {
+			isa = PBXGroup;
+			children = (
+				94F16AF023364D000065F4A5 /* KeychainQueryProvider.swift */,
+				94F16B03233674D90065F4A5 /* BiometryPasswordQueryProvider.swift */,
+				94F16B072336788F0065F4A5 /* GenericPasswordQueryProvider.swift */,
+				94F16B09233678EB0065F4A5 /* InternetPasswordQueryProvider.swift */,
+			);
+			path = QueryProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +130,7 @@
 				TargetAttributes = {
 					94F16AE023364CE20065F4A5 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F16AF423364D000065F4A5 /* InternetProtocol.swift in Sources */,
+				94F16B04233674D90065F4A5 /* BiometryPasswordQueryProvider.swift in Sources */,
+				94F16AF223364D000065F4A5 /* InternetAuthenticationType.swift in Sources */,
+				94F16B062336783E0065F4A5 /* KeychainOperation.swift in Sources */,
+				94F16AF123364D000065F4A5 /* KeychainWrapperError.swift in Sources */,
+				94F16AF523364D000065F4A5 /* KeychainQueryProvider.swift in Sources */,
+				94F16B082336788F0065F4A5 /* GenericPasswordQueryProvider.swift in Sources */,
+				94F16AF323364D000065F4A5 /* KeychainWrapper.swift in Sources */,
+				94F16B0A233678EB0065F4A5 /* InternetPasswordQueryProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -260,6 +305,7 @@
 		94F16AEA23364CE20065F4A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JWVH6CJR7Q;
@@ -276,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nik.koltsov.KeychainWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +331,7 @@
 		94F16AEB23364CE20065F4A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JWVH6CJR7Q;
